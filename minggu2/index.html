@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <center>
+    <div class="regform"><h1>Registrasi MSIB 2022</h1></div>
+    </center>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="Nama">Nama Lengkap:</label>
+                        <input type="text" name="nama" id="nlengkap">
+                    </div>
+                    <div>
+                        <label for="NIK">NIK:</label>
+                        <input type="text" name="nik" id="nik">
+                    </div>
+                    <div>
+                        <label for="program">Program Kegiatan:</label>
+                        <select name="program_kegiatan">
+                            <option value="studi">Studi Independen</option>
+                            <option value="magang">Magang</option>
+                            <option value="pertukaran">Pertukaran Mahasiswa</option>
+                            <option value="wirausaha">Wirausaha Merdeka</option>
+                            <option value="proyek">Proyek Kemanusiaan</option></select>
+                    </div>
+                    <div>
+                        <label for="program">Tempat/Tanggal lahir:</label>
+                        <input type="text">
+                        <input type="date">
+                    </div>
+                        <label for="program">Jenis Kelamin:</label>
+                        <input type="radio" name="Jenis_Kelamin" value="Laki-Laki">Laki-Laki
+                        <input type="radio" name="Jenis_Kelamin" value="Perempuan">Perempuan
+                    <div>
+                        <label for="alamat">Alamat:</label>
+                        <input type="text" name="alamat" id="alamat">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Nama Lengkap</th>
+                                <th>NIK</th>
+                                <th>Program Kegiatan</th>
+                                <th>Tempat/Tanggal lahir</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Alamat</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
